@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laingsburg Community Schools</title>
+    <link rel="icon" type="image/png" href="paw.png">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .paw-logo {
+            width: 60px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        h1 {
+            color: black;
+            margin: 0;
+            font-size: 2em;
+        }
+
+
+        /* Wolf Statue Styles */
+        .wolf-statue-container {
+            width: 100%;
+            max-height: 700px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wolf-statue-image {
+            max-width: 100%;
+            max-height: 700px;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* OK2Say Styles */
+        .ok2say-container {
+            max-width: 300px; /* Adjust this value as needed */
+            margin: 20px auto; /* Centers the container and adds some vertical space */
+        }
+
+        .ok2say-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Quick Links Styles */
+        .quick-links-container {
+            background-color: #c9c9c9;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .quick-links-container h2 {
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .quick-link {
+            background-color: #a11002;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .quick-link:hover {
+            background-color: #000000;
+        }
+
+@media (max-width: 768px) {
+    .quick-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+        /* Menu Styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+            min-width: 44px;
+            min-height: 44px;
+            line-height: 24px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        nav ul li a:hover {
+            color: #555;
+            background-color: #f0f0f0;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #f8f8f8;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex-basis: calc(20% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .footer-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .footer-section p {
+            margin: 5px 0;
+            font-size: 0.875em;
+        }
+
+        @media (max-width: 768px) {
+            .footer-section {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-section {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-title">
+                    <img src="paw.png" alt="Laingsburg Wolf Paw Logo" class="paw-logo">
+                    <h1>Laingsburg Community Schools</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="https://calendar.google.com/calendar/embed?src=calendar%40laingsburg.k12.mi.us&ctz=America%2FNew_York" target="_blank">Calendar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Add this new section for the wolf statue image -->
+    <div class="wolf-statue-container">
+    <img src="wolfstatue.jpeg" alt="Laingsburg Wolf Statue" class="wolf-statue-image">
+    </div>
+    <nav aria-label="Quick Links" class="quick-links-container">
+        <h2 id="quick-links-heading">Quick Links</h2>
+        <div class="quick-links">
+            <a href="#" class="quick-link" target="_blank" rel="noopener noreferrer">Student Resources</a>
+            <a href="#" class="quick-link" target="_blank" rel="noopener noreferrer">Parent Resources</a>
+            <a href="#" class="quick-link" target="_blank" rel="noopener noreferrer">Staff Resources</a>
+            <a href="https://laingsburgathletics.bigteams.com/" class="quick-link" target="_blank" rel="noopener noreferrer">Athletics</a>
+            <a href="#" class="quick-link" target="_blank" rel="noopener noreferrer">District News</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Main content will go here -->
+    </main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div style="display: flex; justify-content: center;">
+            <h2>Strong Foundations ~ Exceptional Values ~ Remarkable Futures!</h2>
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Central Office</h3>
+                <p>205 S. Woodhull Street</p>
+                <p>Laingsburg, MI 48848</p>
+                <p>Phone: (517) 651-5091</p>
+            </div>
+            <div class="footer-section">
+                <h3>High School</h3>
+                <p>8008 Woodbury Road</p>
+                <p>Laingsburg, MI 48848</p>
+                <p>Phone: (517) 651-5091</p>
+            </div>
+            <div class="footer-section">
+                <h3>Middle School</h3>
+                <p>8008 Woodbury Road</p>
+                <p>Laingsburg, MI 48848</p>
+                <p>Phone: (517) 651-5091</p>
+            </div>
+            <div class="footer-section">
+                <h3>Elementary School</h3>
+                <p>205 S. Woodhull Street</p>
+                <p>Laingsburg, MI 48848</p>
+                <p>Phone: (517) 651-5067</p>
+            </div>
+            <div class="footer-section">
+                <h3>Early Childhood Education Center</h3>
+                <p>205 S. Woodhull Street</p>
+                <p>Laingsburg, MI 48848</p>
+                <p>Phone: (517) 651-3100</p>
+            </div>
+            <div class="footer-section">
+                <h3>Transportation</h3>
+                <p>Phone: (517) 651-3020</p>
+            </div>
+            <div class="footer-section">
+                <h3>After Care</h3>
+                <p>Phone: (517) 651-3100 ext. 1220</p>
+            </div>
+            </div>
+            <div class="ok2say-container">
+                <a href="https://ok2say.state.mi.us" target="_self">
+                    <img src="https://cmsv2-assets.apptegy.net/uploads/9355/file/2538799/9fdb868e-f5dc-464c-9b69-8590d434c488.png" alt="OK2SAY Michigan" class="ok2say-image">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
